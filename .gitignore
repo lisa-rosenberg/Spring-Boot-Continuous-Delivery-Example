@@ -1,6 +1,5 @@
+### Gradle ###
 .gradle
-/build/
-/out/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -14,13 +13,14 @@
 ### IntelliJ IDEA ###
 .idea
 *.iws
-*.iml
 *.ipr
 
 ### NetBeans ###
 nbproject/private/
 build/
+out/
 nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+src/test/resources/
