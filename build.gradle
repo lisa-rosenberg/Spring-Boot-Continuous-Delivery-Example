@@ -13,7 +13,6 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-wtp'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
@@ -30,6 +29,10 @@ repositories {
 
 configurations {
 	providedRuntime
+}
+
+springBoot {
+//	executable = true
 }
 
 war {
