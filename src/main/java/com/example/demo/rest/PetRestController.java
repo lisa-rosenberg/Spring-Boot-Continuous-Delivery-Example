@@ -36,7 +36,7 @@ public class PetRestController {
     @RequestMapping("/pets/{petname}")
     public Pet message(@PathVariable String petname) {
         return pets.stream()
-                .filter(pet -> petname.toLowerCase().equals(pet.getName().toLowerCase()))
+                .filter(pet -> petname.equalsIgnoreCase(pet.getName()))
                 .findFirst().orElse(null);
     }
 
